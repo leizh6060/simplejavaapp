@@ -1,0 +1,14 @@
+@Library('shared_Lib')_
+
+
+ 
+ pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            steps {
+               SayHello('Lei') 
+            }
+        }
+    }
+}
